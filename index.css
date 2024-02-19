@@ -1,0 +1,64 @@
+body, html {
+    background-color: hsl(60, 100%, 96%);
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+@font-face {
+    font-family: Gameplay;
+    src: url(/GAMEPLAY.TTF);
+}
+
+
+#page-title {
+    color: hsl(0, 0%, 12%);
+    font-family: Gameplay;
+    font-size: max(30px, 8vh);
+    padding: 1vh;
+}
+
+.grid_panel {
+    display: grid;
+    width: 90%;
+    height: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: 1fr 1fr 3fr;
+    grid-template-rows: 2fr 1fr;
+}
+
+.grid_item {
+    width: 90%;
+    height: 90%;
+    padding-top: 2.5%;
+    padding-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgb(0, 0, 0);
+    border-radius: 15px;
+    margin-bottom: 15%;
+}
+
+.grid_text {
+    text-align: center;
+    color: white;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+@media (max-width:900px) {
+    .grid_panel {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width:600px) {
+    .grid_panel {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
