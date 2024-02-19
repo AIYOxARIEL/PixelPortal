@@ -7,6 +7,7 @@
         <meta name="description" content="A UI design proposition showcasing the ability to track the electrical and water usage of a building"/>
         <link rel="icon" type="image/jpg" href="favicon.jpg">
         <link href="index.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="index.js" defer></script>
         <style>
             img {
                 max-width: 100%;
@@ -14,7 +15,9 @@
         </style>
     </head>
     <body>       
-        <img src="Pixel Studio505 Elevation Render.png" id="background-graphic">
+        <div id="parallax-background">
+            <img src="Pixel Studio505 Elevation Render.png" id="background-graphic">
+        </div>
         <div id="page-title">Pixel Portal</div>
         <div></div>
         
@@ -22,23 +25,23 @@
 
         <div class="grid_panel">
             <div class="grid_item">
-                <p class="grid_text">Today's Net</p>
+                <div class="grid_text">Today's Net</div>
             </div>
             <div class="grid_item">
-                <p class="grid_text">Your Net</p>
+                <div class="grid_text">Your Net</div>
             </div>
             <div class="grid_item">
-                <p class="grid_text">History</p>
+                <div class="grid_text">History</div>
             </div>
             <div class="grid_item">
-                <p class="grid_text">Building</p>
+                <div class="grid_text">Building</div>
                 <img src="Pixel Studio505 Axon Render.png">
             </div>
             <div class="grid_item">
-                <p class="grid_text">Delta</p>
+                <div class="grid_text">Delta</div>
             </div>
             <div class="grid_item">
-                <p class="grid_text">Generation</p>
+                <div class="grid_text">Generation</div>
             </div>
         </div>
     </body>
