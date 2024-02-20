@@ -8,7 +8,7 @@
         <link rel="icon" type="image/jpg" href="favicon.jpg">
         <link href="index.css" rel="stylesheet" type="text/css" />
         <script type="text/javascript" src="index.js" defer></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+        <script src="chart2.9.4.js"></script>
         <style>
             img {
                 max-width: 100%;
@@ -30,10 +30,11 @@
             </div>
             <div class="grid_item">
                 <div class="grid_text">Your Net</div>
+                <canvas id="chart-yournet" style="width:100%; height: 90%;"></canvas>
             </div>
             <div class="grid_item">
                 <div class="grid_text">History</div>
-                <canvas id="myChart" style="width:100%;max-width:700px"></canvas>
+                <canvas id="chart-history" style="width:100%; height: 90%;"></canvas>
             </div>
             <div class="grid_item">
                 <div class="grid_text">Building</div>
@@ -41,6 +42,28 @@
             </div>
             <div class="grid_item">
                 <div class="grid_text">Delta</div>
+                <table>
+                    <tr>
+                        <td>Your Daily Net</td>
+                        <td>▲</td>
+                        <td>2.6%</td>
+                    </tr>
+                    <tr>
+                        <td>Your Monthly Net</td>
+                        <td>▲</td>
+                        <td>2.6%</td>
+                    </tr>
+                    <tr>
+                        <td>Building Daily Net</td>
+                        <td>▲</td>
+                        <td>2.6%</td>
+                    </tr>
+                    <tr>
+                        <td>Building Monthly Net</td>
+                        <td>▲</td>
+                        <td>2.6%</td>
+                    </tr>
+                </table>
             </div>
             <div class="grid_item">
                 <div class="grid_text">Generation</div>

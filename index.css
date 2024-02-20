@@ -17,6 +17,7 @@ body {
     width: 100%;
     height: 100%;
     overflow: hidden;
+    position: fixed;
 }
 
 #background-graphic {
@@ -72,7 +73,7 @@ body {
 }
 
 .grid_panel:hover .grid_item {
-    filter: blur(4px) grayscale(60%);
+    filter: blur(4px) grayscale(80%) opacity(50%);
     background: hsla(60, 100%, 96%, 0);
 }
 

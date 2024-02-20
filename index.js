@@ -24,27 +24,52 @@ window.addEventListener('load', () => {
   initialY = match ? parseFloat(match[11]) : 0;
 });
 
-const xValues = [100,200,300,400,500,600,700,800,900,1000];
+Chart.defaults.global.defaultFontFamily = 'Gameplay';
 
-new Chart("myChart", {
-  type: "line",
-  data: {
-    labels: xValues,
-    datasets: [{
-      data: [860,1140,1060,1060,1070,1110,1330,2210,7830,2478],
-      borderColor: "red",
-      fill: false
-    },{
-      data: [1600,1700,1700,1900,2000,2700,4000,5000,6000,7000],
-      borderColor: "green",
-      fill: false
-    },{
-      data: [300,700,2000,5000,6000,4000,2000,1000,200,100],
-      borderColor: "blue",
-      fill: false
-    }]
-  },
-  options: {
-    legend: {display: false}
-  }
-});
+new Chart("chart-yournet", {
+    type: "doughnut",
+    data: {
+      labels: ["Energy", "Water"],
+      datasets: [{
+        backgroundColor: [
+            "#e85849",
+            "#51b65c"
+        ],
+        data: [55, 49]
+      }]
+    },
+    options: {
+      title: {
+        display: false,
+        text: "World Wide Wine Production 2018"
+      },
+      layout : {
+        padding: 40  
+      }
+    }
+  });
+
+new Chart("chart-history", {
+    type: "line",
+    data: {
+      labels: [12, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      datasets: [{
+        data: [1.28,1.27,1.29,1.46,1.31,1.54,1.89,2.36,3.48,7.04,8.73,11.23,14.38],
+        borderColor: "#e85849",
+        fill: false,
+        label: "Energy (KWh)"
+      },{
+          data: [0,0,0,0.3,0.1,0.4,0.6,1.1,1.3,1.54,1.56,1.34,1.46],
+          borderColor: "#51b65c",
+          label: "Water (Gph)",
+          fill: false
+      }]
+    },
+    options: {
+      legend: {display: true},
+      layout : {
+        padding: 40  
+      }
+      
+    }
+  });
