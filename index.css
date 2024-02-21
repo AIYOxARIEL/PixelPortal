@@ -82,8 +82,14 @@ body {
     max-height: 100%;
 }
 
+.delta-chart {
+    transform: translateY(-10vh);
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .grid_panel:hover .grid_item {
-    filter: blur(4px) grayscale(80%) opacity(50%);
+    filter: blur(4px) grayscale(80%) opacity(35%);
     background: hsla(60, 100%, 96%, 0);
 }
 

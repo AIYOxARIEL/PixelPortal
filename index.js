@@ -23,7 +23,8 @@ window.addEventListener('load', () => {
   initialY = match ? parseFloat(match[11]) : 0;
 });
 
-window.addEventListener('scroll', headerShadow);
+
+
 function headerShadow () {
     if(window.scrollY>=5) {
         document.querySelector("#page-title").style.boxShadow = '0px 5px 10px 0px hsl(0, 0%, 75%)';
@@ -36,7 +37,7 @@ function headerShadow () {
         document.querySelector("#page-title").style.transition = "0.5s";
     }
 }
-
+window.addEventListener('scroll', headerShadow);
 
 
 Chart.defaults.global.defaultFontFamily = 'Gameplay';
@@ -44,13 +45,14 @@ Chart.defaults.global.defaultFontFamily = 'Gameplay';
 new Chart("chart-todaysnet", {
     type: "doughnut",
     data: {
-      labels: ["Energy", "Water"],
+      labels: ["Energy", "Water", "Unused"],
       datasets: [{
         backgroundColor: [
             "#e85849",
-            "#51b65c"
+            "#51b65c",
+            "hsla(0, 0%, 0%, 0.05)"
         ],
-        data: [55, 49]
+        data: [13, 8, 79]
       }]
     },
     options: {
