@@ -11,13 +11,13 @@ body {
 
 @font-face {
     font-family: Gameplay;
-    src: url(/GAMEPLAY.eot);
-    src: url(/GAMEPLAY.TTF) format('truetype'),
-        url(/GAMEPLAY.eot?#iefix) format(embedded-opentype),
-        url(/GAMEPLAY.woff) format(woff),
-        url(/GAMEPLAY.woff2) format(woff2),
-        url(/GAMEPLAY.otf) format(otf),
-        url(/GAMEPLAY.svg) format('svg');
+    src: url(GAMEPLAY.eot);
+    src: url(GAMEPLAY.TTF) format('truetype'),
+        url(GAMEPLAY.eot?#iefix) format(embedded-opentype),
+        url(GAMEPLAY.woff) format(woff),
+        url(GAMEPLAY.woff2) format(woff2),
+        url(GAMEPLAY.otf) format(otf),
+        url(GAMEPLAY.svg) format('svg');
 }
 
 #parallax-background {
