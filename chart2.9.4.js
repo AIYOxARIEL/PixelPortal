@@ -5415,7 +5415,7 @@
         },
     
         // The percentage of the chart that we cut out of the middle.
-        cutoutPercentage: 50,
+        cutoutPercentage: 60,
     
         // The rotation of the chart, where the first data arc begins.
         rotation: -HALF_PI$1,
@@ -5437,9 +5437,9 @@
                         // show value on first line of multiline label
                         // need to clone because we are changing the value
                         dataLabel = dataLabel.slice();
-                        dataLabel[0] += value;
+                        dataLabel[0] += value + "%";
                     } else {
-                        dataLabel += value;
+                        dataLabel += value + "%";
                     }
     
                     return dataLabel;
