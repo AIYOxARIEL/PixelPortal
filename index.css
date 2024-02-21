@@ -37,13 +37,13 @@ body {
 #page-title {
     color: hsl(0, 0%, 12%);
     font-family: Gameplay;
-    font-size: max(30px, 7vh);
+    font-size: max(30px, 8vh);
     padding: 1vh;
     position: fixed;
     z-index: 2;
     width: 100vw;
     background-color: hsl(60, 100%, 96%);
-    box-shadow: 0px 5px 10px 0px hsl(0, 0%, 75%);
+    box-shadow: 0px 0px 0px 0px hsl(0, 0%, 75%);
 }
 
 .grid_panel {
@@ -126,7 +126,15 @@ body {
     transform: translateY(-26vh);
 }
 
-/* @media (max-width:900px) {
+#ranking-chart {
+    padding-bottom: 2vh;
+}
+
+/* #ranking-chart > td {
+    padding-bottom: 15%;
+}
+
+@media (max-width:900px) {
     .grid_panel {
         grid-template-columns: repeat(2, 1fr);
     }

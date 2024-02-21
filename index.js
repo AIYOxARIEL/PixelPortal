@@ -117,3 +117,28 @@ new Chart("chart-history", {
       
     }
   });
+
+  new Chart("chart-generation", {
+    type: "line",
+    data: {
+      labels: [12, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      datasets: [{
+        data: [1.28,1.27,1.29,1.46,1.31,1.54,1.89,4.86,12.73,21.43,31.07],
+        borderColor: "#e85849",
+        fill: false,
+        label: "% Wind Turbines"
+      },{
+          data: [0,0,0,0,0,0,0,2.44,38.91,63.22,68.93],
+          borderColor: "#51b65c",
+          label: "% Solar Panels",
+          fill: false
+      }]
+    },
+    options: {
+      legend: {display: true},
+      layout : {
+        padding: 40  
+      }
+      
+    }
+  });
