@@ -9,10 +9,9 @@ document.addEventListener('mousemove', (e) => {
   const yAxis = (window.innerHeight / 2 - e.pageY) / 50;
 
   // Calculate new translation values
-  const newX = initialX + xAxis + 500; // Add 500px to X translation
-  const newY = initialY + yAxis - 60; // Subtract 470px from Y translation
+  const newX = initialX + xAxis + 500;
+  const newY = initialY + yAxis + 60;
 
-  // Apply the new transform value
   background.style.transform = `translate(${newX}px, ${newY}px)`;
 });
 
@@ -25,6 +24,29 @@ window.addEventListener('load', () => {
 });
 
 Chart.defaults.global.defaultFontFamily = 'Gameplay';
+
+new Chart("chart-todaysnet", {
+    type: "doughnut",
+    data: {
+      labels: ["Energy", "Water"],
+      datasets: [{
+        backgroundColor: [
+            "#e85849",
+            "#51b65c"
+        ],
+        data: [55, 49]
+      }]
+    },
+    options: {
+      title: {
+        display: false,
+        text: "World Wide Wine Production 2018"
+      },
+      layout : {
+        padding: 40  
+      }
+    }
+  });
 
 new Chart("chart-yournet", {
     type: "doughnut",

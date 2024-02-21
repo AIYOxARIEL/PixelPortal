@@ -6,6 +6,7 @@ body, html {
 body {
     font-family: Gameplay;
     overflow-x: hidden;
+    cursor: url(pixel-cursor-default.png) 32 32, pointer;
 }
 
 @font-face {
@@ -38,6 +39,9 @@ body {
     font-family: Gameplay;
     font-size: max(30px, 8vh);
     padding: 1vh;
+    position: fixed;
+    z-index: 2;
+    /* background-color: hsl(60, 100%, 96%); */
 }
 
 .grid_panel {
@@ -47,9 +51,10 @@ body {
     height: 80vh;
     margin-left: auto;
     margin-right: auto;
-    grid-template-columns: 20% 20% 60%;
-    grid-template-rows: 66% 33%;
+    grid-template-columns: 20vw 20vw 60vw;
+    grid-template-rows: 66vh 33vh;
     padding: 0 auto;
+    padding-top: max(30px, 11.5vh);
 }
 
 .grid_item {
@@ -70,6 +75,8 @@ body {
     overflow: hidden;
     width: 100%;
     height: auto;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .grid_panel:hover .grid_item {
@@ -80,6 +87,7 @@ body {
 .grid_panel .grid_item:hover {
     filter: blur(0px) grayscale(0%);
     background: hsla(60, 100%, 96%, 0.75);
+    z-index: 3;
 }
 
 .grid_item:hover {
